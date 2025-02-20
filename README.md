@@ -61,11 +61,11 @@ The file `error_analysis.cpp` is used to combine the error statistics, input err
 ```bash
 g++ error_analysis.cpp -o error_analysis
 ```
-Run the following command to obtain the error statistics:
+Run the command below to generate the error statistics:
 ```
 ./error_analysis Code2_3_7_0.08 1 200
 ```
-Below is the example of the output at the terminal: 
+# Example Terminal Output:
 ```
 Average FER: 0.18 // this is the LER we use to plot the simulation result
 total errors: 360
@@ -76,4 +76,7 @@ Average BER: 0.000694914
 Total number of erroneous bits: 8061
 Number of columns: 5799
 ```
-You will also obtain two .txt files: Code2_3_7_0.08_input.txt and Code2_3_7_0.08_error.txt, recording the input and output error vectors corresponding to decoding failures, respectively, for further analysis. 
+Additionally, two .txt files will be generated:
+
+- `Code2_3_7_0.08_input.txt`: Contains the input error vectors corresponding to decoding failures.
+- `Code2_3_7_0.08_error.txt`: Contains the output error vectors corresponding to decoding failures.
