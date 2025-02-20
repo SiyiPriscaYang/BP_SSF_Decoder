@@ -2,7 +2,7 @@
 This software implements the BP-small set flip (SSF) decoder proposed in [https://quantum-journal.org/papers/q-2021-04-15-432/pdf/](https://quantum-journal.org/papers/q-2021-04-15-432/)](https://quantum-journal.org/papers/q-2021-04-15-432/).
 
 # Compilation of the Decoder
-The file nonbinary_decoder_simulation_degeerate2.cpp is the main file. Run the following code at the terminal to compile it and obtain an executable ''qldpc_nb_deg2_th'':
+The file `nonbinary_decoder_simulation_degeerate2.cpp` is the main file. Run the following code at the terminal to compile it and obtain an executable `qldpc_nb_deg2_th`:
 ```
 g++ nonbinary_decoder_simulation_degenerate2.cpp -o qldpc_nb_deg2_th
 ```
@@ -24,17 +24,16 @@ Instructions for Customizing the Script:
 
 Parity Check Matrix:
 
-  Replace Code2_3_7.txt with the path to your .txt file containing the parity check matrix for your QLDPC code. The matrix should be formatted as follows:
-
-    Use 0, 1, 2, 3 to represent I, X, Y, and Z operations, respectively.
-
-    Each row in the file should correspond to a stabilizer, with entries separated by spaces.
+  Replace `Code2_3_7.txt` with the path to your .txt file containing the parity check matrix for your QLDPC code. The matrix should be formatted as follows:
+  
+  - Use 0, 1, 2, 3 to represent I, X, Y, and Z operations, respectively.
+  - Each row in the file should correspond to a stabilizer, with entries separated by spaces.
 
 Depolarization Error (p):
 
   Replace 0.08 with the desired depolarization error probability (p). The error distribution for the operations (I, X, Y, Z) is defined as:
 
-    (I, X, Y, Z) = (1 - p, p/3, p/3, p/3)
+  - (I, X, Y, Z) = (1 - p, p/3, p/3, p/3)
 
 Number of Trials:
 
