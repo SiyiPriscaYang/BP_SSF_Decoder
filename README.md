@@ -48,11 +48,18 @@ Maximum BP Iterations:
 
   Replace 500 with the upper limit for the number of belief propagation (BP) iterations. This defines the maximum number of iterations to attempt during the decoding process.
 
-The output files job_k.txt, xv_k.txt, ev_k.txt, (k belongs to the range of job indices) records the error statistics, input error vectors, output error vectors (difference of estimated error vectors and input error vectors), respectively.
+## Output Files
 
-# Gathering errors and obtaining the statistics
-The file error_analysis.cpp is the file to combine the error statistics, input error vectors and outpu error vectors gathered from different jobs that runs the decoder. Compile it with the following command:
-```
+The output files `job_k.txt`, `xv_k.txt`, and `ev_k.txt` (where `k` corresponds to the job index) store the following data:
+- `job_k.txt`: Error statistics
+- `xv_k.txt`: Input error vectors
+- `ev_k.txt`: Output error vectors (the difference between the estimated and input error vectors)
+
+## Gathering Errors and Obtaining Statistics
+
+The file `error_analysis.cpp` is used to combine the error statistics, input error vectors, and output error vectors collected from different jobs that run the decoder. To compile it, use the following command:
+
+```bash
 g++ error_analysis.cpp -o error_analysis
 ```
 Run the following command to obtain the error statistics:
