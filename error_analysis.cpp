@@ -1,6 +1,3 @@
-//
-// Created by Siyi Yang on 3/30/23.
-//
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -29,7 +26,6 @@ int main(int argc, char *argv[]) {
     bool found_first_file_x = false;
     int conv_errors, non_conv_errors, trials;
 
-    // test with "/Users/prisca/CLionProjects/QLDPC/" at local PC
     for (int i = lb; i <= rb; i++) {
         string filename = "job_" + to_string(i) + ".txt";
         ifstream infile(filename);
