@@ -84,7 +84,7 @@ Additionally, two .txt files will be generated:
 # Attribution
 If you use this software in your research, please cite both this software and the original paper:
 ```
-@misc{BPSSDDecoder,
+@misc{BPSSFDecoder,
   author = {Siyi Yang},
   title = {{B}{P}-{S}{S}{F} Decoder},
   year = {2025},
