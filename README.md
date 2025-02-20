@@ -83,10 +83,11 @@ Additionally, two .txt files will be generated:
 
 # Attributions
 If you use this software in your research please cite as follows:
-
+```
 @software{BP_SSF_Decoder,
   author = Siyi Yang,
   title = BP SSF Decoder,
   year = {2025},
   url = {https://github.com/SiyiPriscaYang/BP_SSF_Decoder},
 }
+```
