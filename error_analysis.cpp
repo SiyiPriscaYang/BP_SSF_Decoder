@@ -96,7 +96,7 @@ int main(int argc, char *argv[]) {
     double average_ber = (((double) bits_errors) / ((double) total_trials))/((double) (num_cols));
     cout << "Average BER: " << average_ber << endl;
     cout << "Total number of erroneous bits: " << bits_errors << endl;
-    cout << "Number of columns: " << (num_cols-1) << endl;
+    cout << "Number of columns: " << num_cols<< endl;
 
     return 0;
 }
