@@ -1,5 +1,9 @@
 # BP_SSF_Decoder
-This software implements the BP-small set flip (SSF) decoder proposed in [https://quantum-journal.org/papers/q-2021-04-15-432/pdf/](https://quantum-journal.org/papers/q-2021-04-15-432/)](https://quantum-journal.org/papers/q-2021-04-15-432/). For QLDPC codes with large codeword lengths, directly running BP decoders with post-processing schemes like OSD can be computationally expensive. Alternatively, using a BP-SSF decoder first to collect a small set of error vectors that result in decoding failures, followed by a more advanced BP+OSD decoder, can significantly reduce simulation time.
+This software implements the BP-small set flip (SSF) decoder proposed in the following paper:
+```
+Grospellier, A., Grouès, L., Krishna, A., & Leverrier, A. (2021). "Combining hard and soft decoders for hypergraph product codes." *Quantum*, **5**, 432. [DOI:10.22331/q-2021-03-23-432](https://doi.org/10.22331/q-2021-03-23-432)  
+```
+For QLDPC codes with large codeword lengths, directly running BP decoders with post-processing schemes like OSD can be computationally expensive. Alternatively, using a BP-SSF decoder first to collect a small set of error vectors that result in decoding failures, followed by a more advanced BP+OSD decoder, can significantly reduce simulation time.
 
 # Compilation of the Decoder
 The file `nonbinary_decoder_simulation_degenerate2.cpp` is the main file. Run the following code at the terminal to compile it and obtain an executable `qldpc_nb_deg2_th`:
