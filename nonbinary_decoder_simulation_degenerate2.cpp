@@ -1,7 +1,3 @@
-//
-// Created by Siyi Yang on 2/15/24.
-//
-
 #include <vector>
 #include <time.h>
 #include <math.h>
