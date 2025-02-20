@@ -2,7 +2,7 @@
 This software implements the BP-small set flip (SSF) decoder proposed in [https://quantum-journal.org/papers/q-2021-04-15-432/pdf/](https://quantum-journal.org/papers/q-2021-04-15-432/)](https://quantum-journal.org/papers/q-2021-04-15-432/). For QLDPC codes with large codeword lengths, directly running BP decoders with post-processing schemes like OSD can be computationally expensive. Alternatively, using a BP-SSF decoder first to collect a small set of error vectors that result in decoding failures, followed by a more advanced BP+OSD decoder, can significantly reduce simulation time.
 
 # Compilation of the Decoder
-The file `nonbinary_decoder_simulation_degeerate2.cpp` is the main file. Run the following code at the terminal to compile it and obtain an executable `qldpc_nb_deg2_th`:
+The file `nonbinary_decoder_simulation_degenerate2.cpp` is the main file. Run the following code at the terminal to compile it and obtain an executable `qldpc_nb_deg2_th`:
 ```
 g++ nonbinary_decoder_simulation_degenerate2.cpp -o qldpc_nb_deg2_th
 ```
@@ -81,5 +81,24 @@ Additionally, two .txt files will be generated:
 - `Code2_3_7_0.08_input.txt`: Contains the input error vectors corresponding to decoding failures. You could use this file as input of more advanced decoders like BP+OSD decoder to save simulation time.
 - `Code2_3_7_0.08_error.txt`: Contains the output error vectors corresponding to decoding failures. You could use this file to analyze the error profile.
 
+# Attribution
+If you use this software in your research, please cite both this software and the original paper:
+```
+@misc{BPSSDDecoder,
+  author = {Siyi Yang},
+  title = {{B}{P}-{S}{S}{F} Decoder},
+  year = {2025},
+  howpublished = {\url{https://github.com/SiyiPriscaYang/BP_SSF_Decoder}},
+}
+@article{grospellier2021combining,
+  title={Combining hard and soft decoders for hypergraph product codes},
+  author={Grospellier, Antoine and Grou{\`e}s, Lucien and Krishna, Anirudh and Leverrier, Anthony},
+  journal={Quantum},
+  volume={5},
+  pages={432},
+  year={2021},
+  publisher={Verein zur F{\"o}rderung des Open Access Publizierens in den Quantenwissenschaften}
+}
+```
 
 
