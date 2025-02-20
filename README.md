@@ -57,6 +57,17 @@ g++ error_analysis.cpp -o error_analysis
 ```
 Run the following command to obtain the error statistics:
 ```
-./error_analysis Code2_3_7_error_analysis 1 200
+./error_analysis Code2_3_7_0.08 1 200
 ```
-
+Below is the example of the output at the terminal: 
+```
+./error_analysis Code2_3_7_0.08 1 200
+Average FER: 0.18
+total errors: 360
+total convergent errors: 12
+total non-convergent errors: 348
+total trials: 2000
+Average BER: 0.000694914
+Total number of erroneous bits: 8061
+Number of columns: 5799
+```
