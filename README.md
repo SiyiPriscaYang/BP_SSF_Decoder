@@ -2,7 +2,7 @@
 This software implements the BP-small set flip (SSF) decoder proposed in [https://quantum-journal.org/papers/q-2021-04-15-432/pdf/](https://quantum-journal.org/papers/q-2021-04-15-432/)](https://quantum-journal.org/papers/q-2021-04-15-432/).
 
 # Compilation of the Decoder
-The nonbinary_decoder_simulation_degeerate2.cpp is the main file. Run the following code at the terminal to compile it and obtain an executable ''qldpc_nb_deg2_th'':
+The file nonbinary_decoder_simulation_degeerate2.cpp is the main file. Run the following code at the terminal to compile it and obtain an executable ''qldpc_nb_deg2_th'':
 ```
 g++ nonbinary_decoder_simulation_degenerate2.cpp -o qldpc_nb_deg2_th
 ```
@@ -47,3 +47,16 @@ Job Array Indices:
 Maximum BP Iterations:
 
   Replace 500 with the upper limit for the number of belief propagation (BP) iterations. This defines the maximum number of iterations to attempt during the decoding process.
+
+The output files job_k.txt, xv_k.txt, ev_k.txt, (k belongs to the range of job indices) records the error statistics, input error vectors, output error vectors (difference of estimated error vectors and input error vectors), respectively.
+
+# Gathering errors and obtaining the statistics
+The file error_analysis.cpp is the file to gather input error vectors and output error vectors gathered from the decoder. Compile it with the following command:
+```
+g++ error_analysis.cpp -o error_analysis
+```
+Run the following command to obtain the error statistics:
+```
+./error_analysis Code2_3_7_error_analysis 1 200
+```
+
