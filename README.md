@@ -20,7 +20,7 @@ Below is an example of a SLURM job submission script.
 ./qldpc_nb_deg2_th Code2_3_7.txt 0.08 10 500 0.0 $SLURM_ARRAY_TASK_ID
 ```
 
-Instructions for Customizing the Script:
+## Instructions for Customizing the Script:
 
 Parity Check Matrix:
 
