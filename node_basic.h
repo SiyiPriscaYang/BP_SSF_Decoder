@@ -1,7 +1,3 @@
-//
-// Created by Siyi Yang on 1/3/24.
-//
-
 #ifndef QLDPC_NODE_BASIC_H
 #define QLDPC_NODE_BASIC_H
 
