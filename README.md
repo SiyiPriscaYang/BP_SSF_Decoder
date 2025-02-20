@@ -80,3 +80,13 @@ Additionally, two .txt files will be generated:
 
 - `Code2_3_7_0.08_input.txt`: Contains the input error vectors corresponding to decoding failures.
 - `Code2_3_7_0.08_error.txt`: Contains the output error vectors corresponding to decoding failures.
+
+# Attributions
+If you use this software in your research please cite as follows:
+
+@software{BP_SSF_Decoder,
+  author = Siyi Yang,
+  title = BP SSF Decoder,
+  year = {2025},
+  url = {https://github.com/SiyiPriscaYang/BP_SSF_Decoder},
+}
