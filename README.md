@@ -24,26 +24,26 @@ Instructions for Customizing the Script:
 
 Parity Check Matrix:
 
-Replace Code2_3_7.txt with the path to your .txt file containing the parity check matrix for your QLDPC code. The matrix should be formatted as follows:
+  Replace Code2_3_7.txt with the path to your .txt file containing the parity check matrix for your QLDPC code. The matrix should be formatted as follows:
 
-Use 0, 1, 2, 3 to represent I, X, Y, and Z operations, respectively.
+    Use 0, 1, 2, 3 to represent I, X, Y, and Z operations, respectively.
 
-Each row in the file should correspond to a stabilizer, with entries separated by spaces.
+    Each row in the file should correspond to a stabilizer, with entries separated by spaces.
 
 Depolarization Error (p):
 
-Replace 0.08 with the desired depolarization error probability (p). The error distribution for the operations (I, X, Y, Z) is defined as:
+  Replace 0.08 with the desired depolarization error probability (p). The error distribution for the operations (I, X, Y, Z) is defined as:
 
-(I, X, Y, Z) = (1 - p, p/3, p/3, p/3)
+    (I, X, Y, Z) = (1 - p, p/3, p/3, p/3)
 
 Number of Trials:
 
-Replace 10 with the number of trials to run for each job. This value controls how many times the simulation will be repeated within each individual job.
+  Replace 10 with the number of trials to run for each job. This value controls how many times the simulation will be repeated within each individual job.
 
 Job Array Indices:
 
-Modify #SBATCH -a 1-200 to set the range of job indices to be submitted. For example, if you want to run 300 jobs, change this to #SBATCH -a 1-300.
+  Modify #SBATCH -a 1-200 to set the range of job indices to be submitted. For example, if you want to run 300 jobs, change this to #SBATCH -a 1-300.
 
 Maximum BP Iterations:
 
-Replace 500 with the upper limit for the number of belief propagation (BP) iterations. This defines the maximum number of iterations to attempt during the decoding process.
+  Replace 500 with the upper limit for the number of belief propagation (BP) iterations. This defines the maximum number of iterations to attempt during the decoding process.
