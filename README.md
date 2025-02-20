@@ -78,7 +78,7 @@ total non-convergent errors: 348
 total trials: 2000
 Average BER: 0.000694914
 Total number of erroneous bits: 8061
-Number of columns: 5799
+Number of columns: 5800
 ```
 Additionally, two .txt files will be generated:
 
