@@ -1,7 +1,7 @@
 # BP_SSF_Decoder
 This software implements the BP-small set flip (SSF) decoder proposed in the following paper:
 ```
-Grospellier, A., Grouès, L., Krishna, A., & Leverrier, A. (2021). "Combining hard and soft decoders for hypergraph product codes." *Quantum*, **5**, 432. [DOI:10.22331/q-2021-03-23-432](https://doi.org/10.22331/q-2021-03-23-432)  
+Grospellier, A., Grouès, L., Krishna, A., & Leverrier, A. (2021). "Combining hard and soft decoders for hypergraph product codes." Quantum Journal, volume 5, page 432. [DOI:10.22331/q-2021-04-15-432](https://doi.org/10.22331/q-2021-04-15-432)  
 ```
 For QLDPC codes with large codeword lengths, directly running BP decoders with post-processing schemes like OSD can be computationally expensive. Alternatively, using a BP-SSF decoder first to collect a small set of error vectors that result in decoding failures, followed by a more advanced BP+OSD decoder, can significantly reduce simulation time.
 
