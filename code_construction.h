@@ -1,7 +1,3 @@
-//
-// Created by Siyi Yang on 1/5/24.
-//
-
 #ifndef QLDPC_CODE_CONSTRUCTION_H
 #define QLDPC_CODE_CONSTRUCTION_H
 
