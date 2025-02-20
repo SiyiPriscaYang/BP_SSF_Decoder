@@ -51,7 +51,7 @@ Maximum BP Iterations:
 The output files job_k.txt, xv_k.txt, ev_k.txt, (k belongs to the range of job indices) records the error statistics, input error vectors, output error vectors (difference of estimated error vectors and input error vectors), respectively.
 
 # Gathering errors and obtaining the statistics
-The file error_analysis.cpp is the file to gather input error vectors and output error vectors gathered from the decoder. Compile it with the following command:
+The file error_analysis.cpp is the file to combine the error statistics, input error vectors and outpu error vectors gathered from different jobs that runs the decoder. Compile it with the following command:
 ```
 g++ error_analysis.cpp -o error_analysis
 ```
