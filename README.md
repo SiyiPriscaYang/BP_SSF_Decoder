@@ -41,7 +41,7 @@ Below is an example of a SLURM job submission script.
 
 - Job Array Indices:
 
-  Modify #SBATCH -a 1-200 to set the range of job indices to be submitted. For example, if you want to run 300 jobs, change this to #SBATCH -a 1-300.
+  Modify `#SBATCH -a 1-200` to set the range of job indices to be submitted. For example, if you want to run 300 jobs, change this to `#SBATCH -a 1-300` or `#SBATCH -a 201-500`.
 
 - Maximum BP Iterations:
 
