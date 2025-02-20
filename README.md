@@ -78,6 +78,8 @@ Number of columns: 5799
 ```
 Additionally, two .txt files will be generated:
 
-- `Code2_3_7_0.08_input.txt`: Contains the input error vectors corresponding to decoding failures.
+- `Code2_3_7_0.08_input.txt`: Contains the input error vectors corresponding to decoding failures. You could use this file as input of more advanced decoders like BP+OSD decoder to save simulation time.
 - `Code2_3_7_0.08_error.txt`: Contains the output error vectors corresponding to decoding failures.
+
+
 
