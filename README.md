@@ -85,24 +85,5 @@ Additionally, two .txt files will be generated:
 - `Code2_3_7_0.08_input.txt`: Contains the input error vectors corresponding to decoding failures. You could use this file as input of more advanced decoders like BP+OSD decoder to save simulation time.
 - `Code2_3_7_0.08_error.txt`: Contains the output error vectors corresponding to decoding failures. You could use this file to analyze the error profile.
 
-# Attribution
-If you use this software in your research, please cite both this software and the original paper:
-```
-@misc{BPSSFDecoder,
-  author = {Siyi Yang},
-  title = {{B}{P}-{S}{S}{F} Decoder},
-  year = {2025},
-  howpublished = {\url{https://github.com/SiyiPriscaYang/BP_SSF_Decoder}},
-}
-@article{grospellier2021combining,
-  title={Combining hard and soft decoders for hypergraph product codes},
-  author={Grospellier, Antoine and Grou{\`e}s, Lucien and Krishna, Anirudh and Leverrier, Anthony},
-  journal={Quantum},
-  volume={5},
-  pages={432},
-  year={2021},
-  publisher={Verein zur F{\"o}rderung des Open Access Publizierens in den Quantenwissenschaften}
-}
-```
 
 
