@@ -1,5 +1,5 @@
 # BP_SSF_Decoder
-This software implements the BP-small set flip (SSF) decoder proposed in the following paper:
+This software implements the BP+Small Set Flip (SSF) decoder proposed in the following paper, with modifications tailored for the quaternary BP decoder:
 ```
 Grospellier, A., Grouès, L., Krishna, A., & Leverrier, A. (2021). "Combining hard and soft decoders for hypergraph product codes." Quantum Journal, volume 5, page 432. [DOI:10.22331/q-2021-04-15-432](https://doi.org/10.22331/q-2021-04-15-432)  
 ```
